@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using FluentAssertions;
 using TechTalk.SpecFlow;
 
 namespace DemoSpecFlow
@@ -7,7 +6,7 @@ namespace DemoSpecFlow
     [Binding]
     public class CalculatorSteps
     {
-        private int result;
+        private int actual;
         private Calculator calculator = new Calculator();
 
         [Given(@"I have entered (.*) into the calculator")]
@@ -25,13 +24,13 @@ namespace DemoSpecFlow
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
-            result = calculator.Add();
+            actual = calculator.Add();
         }
 
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int expectedResult)
         {
-            Assert.AreEqual(expectedResult, result);
+            actual.Should().Be(1);
         }
     }
 }
