@@ -1,0 +1,51 @@
+﻿2018-03-20T01:27:41.0721839+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-03-20T01:27:41.3123552+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-03-20T01:27:41.3133539+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\demo\src\1903201882229\demo_specflow_190320182129\demo_specflow_190320182129\bin\Debug\DemoSpecFlow.dll
+2018-03-20T01:27:41.3133539+05:30;VSTestExecutionThread;Info;Profile: Default
+2018-03-20T01:27:46.4618331+05:30;Thread#13;Info;Discovering target: Default
+2018-03-20T01:27:46.4618331+05:30;Thread#13;Info;Discovering tests from assembly: C:\demo\src\1903201882229\demo_specflow_190320182129\demo_specflow_190320182129\bin\Debug\DemoSpecFlow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: DemoSpecFlow/Default - 
+#1: Default - 
+#2: DemoSpecFlow - 
+#3: Country - 
+#6: Find Countries in regions for example for Asia - TestAssembly:DemoSpecFlow/Feature:Country/Scenario:Find+Countries+in+regions+for+example+for+Asia
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for DemoSpecFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sathe\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.7.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I warm up the API
+Thread#0:T: GivenIWarmUpTheAPI(): 
+Thread#0:T:done: CountrySteps.GivenIWarmUpTheAPI() (0.0s)
+Thread#0:B:When I make a request with Asia : null
+Thread#0:T: Getting Details from - api:{/rest/v2/region/{region} 
+Thread#0:T:result : True
+Thread#0:T:done: CountrySteps.GetCountriesInRegion("Asia", "null") (19.3s)
+Thread#0:B:Then the system should return bordering countries more than 3
+Thread#0:T:done: CountrySteps.GetBorderingCountryMoreThanGivenInput(3) (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 20.5992058 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
