@@ -24,12 +24,12 @@ namespace Assessment
             _testListener.WriteTestOutput(" GivenIWarmUpTheAPI(): ");
         }
 
-        [When(@"I make a request with (.*), (.*) and (.*)")]
-        public void GetCountryDetails(string currency, string code, string capital)
+        [When(@"I make a request with (.*), (.*)")]
+        public void GetCountryDetailsByCurrencyAndCapital(string currency, string capital)
         {
             _testListener.WriteTestOutput(" Getting Details from - api:{/rest/v2/capital/{capital} ");
-            _countryObj = ScenarioUtils.GetCountryDetails(code, capital, currency);
-            if (_countryObj.currencies[0].name == currency)
+            _countryObj = ScenarioUtils.GetCountryDetailsByCurrencyAndCapital(currency, capital);
+            if (_countryObj.currencies[0].name == currency && _countryObj.capital == capital)
             {
                 actual = true;
             }

@@ -1,0 +1,30 @@
+﻿2018-03-20T10:22:42.4235033+05:30;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-03-20T10:22:42.5336001+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-03-20T10:22:42.5336001+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\demo\src\1903201882229\Assessment\Assessment\bin\Debug\DemoSpecFlow.dll
+2018-03-20T10:22:42.5336001+05:30;VSTestExecutionThread;Info;Profile: Default
+2018-03-20T10:22:48.6455444+05:30;Thread#13;Info;Discovering target: Default
+Test Suite Dump
+#0: Assessment/Default - 
+End: Test Suite Dump
+test thread #0 error: TechTalk.SpecRun.TestRunCancelledException: Test run cancelled
+   at TechTalk.SpecRun.Framework.Logging.AsyncTestRunTracerBroker.EvaluateCancelling()
+   at TechTalk.SpecRun.Framework.Logging.AsyncTestRunTracerBroker.SendTestThreadStarted(TestThreadResult testThreadResult)
+   at TechTalk.SpecRun.Framework.TestExecutionManager.RegisterThreadStart(Int32 threadId, String machineName)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager)
+test thread error: TechTalk.SpecRun.Framework.SpecRunException: At least one test thread aborted. ---> TechTalk.SpecRun.TestRunCancelledException: Test run cancelled
+   at TechTalk.SpecRun.Framework.Logging.AsyncTestRunTracerBroker.EvaluateCancelling()
+   at TechTalk.SpecRun.Framework.Logging.AsyncTestRunTracerBroker.SendTestThreadStarted(TestThreadResult testThreadResult)
+   at TechTalk.SpecRun.Framework.TestExecutionManager.RegisterThreadStart(Int32 threadId, String machineName)
+   at TechTalk.SpecRun.Framework.TestThread.Run(ITestExecutionManager executionManagerForRun)
+   at TechTalk.SpecRun.Framework.AsyncTestThreadRunner.RunSync(TestExecutionManager executionManager)
+   --- End of inner exception stack trace ---
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 0
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

@@ -58,9 +58,9 @@ Examples:
 @mytag
 Scenario Outline: Use currency code and produce one test
 	Given I warm up the API
-	When I make a request with Euro, 371 and Riga
-	Then the response should be the <Result>
-	And the response status code should be <Status>
+	When I make a request with Euro, Riga
+	Then the response should be the Succes
+	And the response status code should be 200
 
 Examples: 
 	  | capital | currency			| results	 |
